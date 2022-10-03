@@ -692,6 +692,7 @@ body {
 
 .footer {
   padding: 48px 80px;
+  overflow: hidden;
   padding-bottom: 58px; }
   .footer .top-footer {
     display: flex;
@@ -787,8 +788,25 @@ body {
 
 .our-see, .what-see, .blog-see {
   display: none; }
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1412px) {
+    .hero-image,.text-container:after {
+      display: none;
+    }
+    .full-container {
+      padding-left: 0px;
+    }
+    .full-container,.container-l,.container {
+      padding: 0px 20px;
+    }
+     
+}
+@media only screen and (max-width: 475px) {
+  .hero-image,.text-container:after {
+    display: block;
+  }
+  .full-container,.container-l,.container {
+    padding: inherit;
+  }
   /* Header */
   .menu, .scroll, .gray-container:before, .categorys {
     display: none; }

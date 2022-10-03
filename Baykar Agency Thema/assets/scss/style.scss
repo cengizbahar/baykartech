@@ -861,7 +861,7 @@ body{
 	background: #3B435A;
 }
 .footer {
-
+	overflow: hidden;
 	padding: 48px 80px;
 	padding-bottom: 58px;
 	.top-footer {
@@ -997,9 +997,26 @@ body{
 	display: none;
 }
 
+@media only screen and (max-width: 1412px) {
+    .hero-image,.text-container:after {
+      display: none;
+    }
+    .full-container {
+      padding-left: 0px;
+    }
+    .full-container,.container-l,.container {
+      padding: 0px 20px;
+    }
+     
+}
 
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 475px) {
+	.hero-image,.text-container:after {
+		display: block;
+	  }
+	  .full-container,.container-l,.container {
+		padding: inherit;
+	  }
 	/* Header */
 	.menu ,.scroll,.gray-container:before,.categorys{
 		display: none;
